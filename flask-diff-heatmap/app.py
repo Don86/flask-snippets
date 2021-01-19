@@ -52,8 +52,6 @@ def index():
     # data = {'chart_data': chart_data}
     # this will be passed to index.html as an array of JS objects
 
-    #return render_template("index.html", data=data)
-
     #d0 = pd.read_csv("./static/data/heatmap_data.csv")
     d0 = pd.read_csv("/Users/dteng/Documents/zdata/sample-luca-data-3classes.csv")
     # do all possible comparisons
