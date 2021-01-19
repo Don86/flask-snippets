@@ -83,8 +83,12 @@ def index():
             new_row_dict[cname] = str(d1.iloc[i][cname])
         chart_data.append(new_row_dict)
     
-    chart_data = json.dumps(chart_data, indent=2)
-    flask_data = {'chart_data': chart_data}
+    # prep abundance data
+    d2 = d0[["feature_id"]+data_colnames_ls]
+    print(d2)
+
+    # Push to front end
+    flask_data = {'chart_data': json.dumps(chart_data, indent=2)}
 
     return render_template("index.html", flask_data=flask_data)
 

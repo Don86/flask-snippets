@@ -31,8 +31,8 @@ Not working, not sure why
 div.tooltip {   
     position: absolute;           
     text-align: center;           
-    width: 60px;                  
-    height: 28px;                 
+    width: 150px;                  
+    height: 50px;                 
     padding: 2px;             
     font: 12px sans-serif;        
     background: lightsteelblue;   
